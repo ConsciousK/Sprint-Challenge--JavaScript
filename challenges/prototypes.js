@@ -5,10 +5,10 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-function CuboidMaker(gameobject) {
-  this.height = gameobject.height;
-  this.width = gameobject.width;
-  this.length = gameobject.length;
+function CuboidMaker(cuboid) {
+  this.height = cuboid.height;
+  this.width = cuboid.width;
+  this.length = cuboid.length;
 }
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
