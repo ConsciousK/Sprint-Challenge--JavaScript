@@ -30,32 +30,51 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    '.map()' returns a callback with three data sets, The current item of the array state, the current index of the current item index, and the entire array data. .forEach() Acts like a loop that will loop through the array, and returns certain data based on conditions you can set through if statements etc. In my opinion .forEach can be more powerful. 
+    
 2. What is the difference between a function and a method?
-
+    
+    A Function can take in parameters, manipulate the parameters, and return a new value. a method is just a function that belongs to a class/object.
+    
 3. What is closure?
+
+    Closure is a term used to describe the scope in which functions can access data.
 
 4. Describe the four rules of the 'this' keyword.
 
+a. 'this' can have a global binding when referenced in the global scope. Will return the window and/or console object. generally referencing the entire library of JS.
+
+b. 'this' can be implied, by referencing a particular object. For example, I have an object with a function inside referencing 'this'
+when the function is called, 'this' implies the object, by calling the function inside the object  ex. "object.function();"   
+When you use 'this' inside of the function, contained within the object, it will always imply the object the function rests inside, so long as the object is referenced when the function is called.
+
+c. 'this' can also be used as a 'New Binding' in a constructor function. when a constructor function is called. 
+'this.whatever = whatever; will become bound to the NEW object that is created. similiar to an implied function, a new binding 'this' will reference the object that was just created.
+
+d.  'this' can be explicitly bound to an object as well. Referred to as an 'Explicit Binding.' you must bind the 'this' keyword to a different object when you call the function. so you can give one object, another objects properties.
+
 5. Why do we need super() in an extended class?
+
+  Super will pass any new arguements from an extended class up to the parent object.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request
+- [x] PM then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
@@ -66,19 +85,19 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
